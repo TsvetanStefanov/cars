@@ -1,0 +1,142 @@
+.secondPart{ //second part main div
+    background-color: rgb(178, 178, 183);
+    height: 600px;   
+}
+
+.testSecondPart>:first-child{
+    padding: 20px;
+    font-size: 35px;
+    margin-left: 10px;
+}
+.testSecondPart>:nth-child(2){
+    font-size: 20px;
+    margin-left: 10px;
+}
+@media only screen and (max-width: 700px) { // Text Phone
+    .testSecondPart>:first-child{
+        font-size: 20px;
+    }
+    .testSecondPart>:nth-child(2){
+        font-size: 15px;
+    }
+}
+////////////////Image containers js
+#imagesRow{  ///main Wrapper
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: scroll; 
+}
+.containerImage{  //img container box
+    min-width: 300px;
+    max-width: 400px;
+    height: 400px;
+    background-color: rgb(175, 174, 170);
+    border: 1px solid rgba(0, 0, 0, 0.615);
+    box-shadow: 1px 1px 10px 1px rgb(112, 44, 44);
+    border-radius: 5px 5px;
+}
+.carsSize{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border:  1px solid rgb(87, 87, 87);
+}
+.experReview{
+    margin-left: 10%;
+    font-size: 20px;
+}
+.descReview{
+    margin-left: 5%;
+    font-size: 16px; 
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+@media only screen and (max-width: 700px) { // Text Phone
+    .imagesRow{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;    
+    }
+    .containerImage{
+      margin: auto;
+    }
+}
+///////////////////Big image section
+.bigImage{
+ position: relative;
+}
+.bigImage >p:nth-child(2){
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 20%;
+    font-size: 70px;
+    font-family: 'Brush Script MT', cursive;
+   }
+   .bigImage >p:first-child {
+    position: absolute;
+    color: white;
+    top: 2%;
+    left: 10%;
+    font-size: 25px;
+   }
+   #play{
+       display: block;
+    position: absolute;
+    color: white;
+    top: 35%;
+    left: 45%;
+    padding: 30px;
+    font-size: 40px;  
+    border: 4px solid rgb(121, 121, 121);
+    border-radius: 50%;
+    background-color: rgba(19, 19, 19, 0.795);
+   }
+   #play:hover{
+    color:red;
+    border: 4px solid black
+   }
+ 
+   @media only screen and (max-width: 1000px) { 
+    .bigImage >p:nth-child(2) {
+        font-size: 30px;
+    }
+    .bigImage >p:first-child {
+        position: absolute;
+        color: white;
+        top: 2%;
+        left: 10%;
+        font-size: 15px;
+       }
+       #play{
+        display: block;
+     position: absolute;
+     color: white;
+     top: 25%;
+     left: 40%;
+     padding: 1px;
+     font-size: 5px;  
+     border: 2px solid rgb(121, 121, 121);
+     border-radius: 100%;
+     background-color: rgba(19, 19, 19, 0.795);
+    }
+}
+   
+#imgBigImage{
+    display: block;
+    margin-top: 25px;
+  margin-left:  auto;
+  margin-right:  auto;
+   transition: 1s;
+   box-shadow: 1px 1px 3px 2px rgb(140, 140, 140); 
+
+}
+.tiny{
+    display: block;
+  margin-left:  auto;
+  margin-right:  auto;
+   transition: 1s;
+   width: 100%;   
+   margin-top: 1px;
+}

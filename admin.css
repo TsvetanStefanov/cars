@@ -1,0 +1,67 @@
+.mainWrapper{
+    display: flex;
+    flex-direction: row;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(153, 179, 179);
+    width: 300px;
+}
+.admins{
+    text-align: center;
+    font-size: 50px;
+}
+#lapelforOptions{
+    font-size: 30px;
+    text-align: center;
+}
+.formArrays{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: aquamarine;
+}
+#submitIdArrays{
+    background-color: aqua;
+}
+#errorMsg1{
+    font-size: 25px;
+    color: red;
+}
+#errorMsg2{
+    font-size: 25px;
+    color: green;
+}
+#errorMsg3{
+    font-size: 25px;
+    color: teal;
+}
+#errorMsg4{
+    font-size: 25px;
+    color: rgb(49, 0, 128);  
+}
+#deleteOptions{
+    font-size: 25px;
+    color: rgb(19, 0, 128);    
+}
+.paraSize{
+    font-size: 20px;
+}
+#table > p {
+    background-color: rgb(207, 225, 227);
+    font-size: 20px;
+}
+#table  {
+    background-color: rgb(239, 234, 234);
+    display: inline-block;
+}
+.tr{
+    border: 1px solid black;
+}
+.td{
+    font-size: 20px;
+}
+.testcolor{
+    color: rgb(183, 183, 183);
+}

@@ -1,0 +1,61 @@
+#Research{ ///main container part 3
+    background-color:rgb(227, 227, 227);
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: scroll ;
+    border: 1px solid rgb(119, 119, 119);
+}
+::-webkit-scrollbar{
+    height: 20px;
+    width: 20px;
+    background: gray;
+}
+::-webkit-scrollbar-thumb:horizontal{
+    background: rgb(128, 0, 0);
+    border-radius: 10px;
+}
+.researchitems{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    background-color: rgb(216, 213, 213);
+    margin-top: 1%;
+    box-shadow:  1px 1px 5px 1px grey;
+}
+.researchImg{
+    object-fit: cover;
+     max-width: 300px;
+     height: 300px;
+     box-shadow:  1px 1px 5px 1px grey;
+}
+.researchP1{
+    margin-left: 10%;
+}
+.researchh1{
+    margin-left: 10%;
+}
+.researchP2{
+    margin-left: 10%;
+  position: relative;
+    display: none;
+}
+.researchitems:hover .researchP1{
+    display: none;
+}
+.researchitems:hover .researchImg{
+ height: 0px;
+ width: 300px;
+ transition: 0.8s;
+}
+.researchitems:hover .researchP2{
+    display: block;
+}
+.fa-arrow-right{
+    position: absolute;
+    top: 270px;
+    left: 220px;
+    font-size: 20px;
+    color: rgb(2, 2, 119);
+}

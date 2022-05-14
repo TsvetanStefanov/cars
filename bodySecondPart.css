@@ -1,0 +1,136 @@
+.secondPart {
+  background-color: #b2b2b7;
+  height: 600px;
+}
+.testSecondPart > :first-child {
+  padding: 20px;
+  font-size: 35px;
+  margin-left: 10px;
+}
+.testSecondPart > :nth-child(2) {
+  font-size: 20px;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 700px) {
+  .testSecondPart > :first-child {
+    font-size: 20px;
+  }
+  .testSecondPart > :nth-child(2) {
+    font-size: 15px;
+  }
+}
+#imagesRow {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: scroll;
+}
+.containerImage {
+  min-width: 300px;
+  max-width: 400px;
+  height: 400px;
+  background-color: #afaeaa;
+  border: 1px solid rgba(0, 0, 0, 0.615);
+  box-shadow: 1px 1px 10px 1px #702c2c;
+  border-radius: 5px 5px;
+}
+.carsSize {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #575757;
+}
+.experReview {
+  margin-left: 10%;
+  font-size: 20px;
+}
+.descReview {
+  margin-left: 5%;
+  font-size: 16px;
+  font-weight: bold;
+  overflow-wrap: break-word;
+}
+@media only screen and (max-width: 700px) {
+  .imagesRow {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .containerImage {
+    margin: auto;
+  }
+}
+.bigImage {
+  position: relative;
+}
+.bigImage > p:nth-child(2) {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 20%;
+  font-size: 70px;
+  font-family: 'Brush Script MT', cursive;
+}
+.bigImage > p:first-child {
+  position: absolute;
+  color: white;
+  top: 2%;
+  left: 10%;
+  font-size: 25px;
+}
+#play {
+  display: block;
+  position: absolute;
+  color: white;
+  top: 35%;
+  left: 45%;
+  padding: 30px;
+  font-size: 40px;
+  border: 4px solid #797979;
+  border-radius: 50%;
+  background-color: rgba(19, 19, 19, 0.795);
+}
+#play:hover {
+  color: red;
+  border: 4px solid black;
+}
+@media only screen and (max-width: 1000px) {
+  .bigImage > p:nth-child(2) {
+    font-size: 30px;
+  }
+  .bigImage > p:first-child {
+    position: absolute;
+    color: white;
+    top: 2%;
+    left: 10%;
+    font-size: 15px;
+  }
+  #play {
+    display: block;
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 40%;
+    padding: 1px;
+    font-size: 5px;
+    border: 2px solid #797979;
+    border-radius: 100%;
+    background-color: rgba(19, 19, 19, 0.795);
+  }
+}
+#imgBigImage {
+  display: block;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 1s;
+  box-shadow: 1px 1px 3px 2px #8c8c8c;
+}
+.tiny {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 1s;
+  width: 100%;
+  margin-top: 1px;
+}

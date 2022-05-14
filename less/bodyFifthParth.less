@@ -1,0 +1,68 @@
+.fifthContainer{
+    height: 600px;
+    background-color: rgb(245, 245, 245);
+    border-top: 1px solid rgb(0, 0, 84);
+    box-shadow: 1px 1px 2px 2px rgba(139, 139, 139, 0.187);
+}
+.fifthContainer>p{
+    padding-top: 5%;
+    font-size: 30px;
+    margin-left: 10%;
+}
+.flexFifthContainer{
+   margin-left: 10%;
+   margin-right: 10%;
+}
+.flexMenuWrap{
+    border-bottom: 1px solid grey;
+}
+.flexFifthItem{
+    display: flex;
+    flex-direction: row;
+   // background-color: rgb(228, 228, 228);
+    justify-content: space-between;
+  //  border: 1px solid rgba(184, 184, 184, 0.516);
+}
+.fistP{
+    font-size: 20px;
+}
+.flexFifthItem >p{
+    font-size: 24px;
+   // padding: 13px;
+}
+.flexFifthItem >i{
+    font-size: 24px;
+    padding-top: 25px;
+    padding-right: 5%;
+}
+
+.flexFifthItemDown{
+    margin-top: 120px ;
+    margin-bottom: 10px;
+    display: none;
+}
+.clock{
+    transform: rotate(-180deg);
+    transition: 0.5s;
+    color: rgb(153, 0, 0);
+}
+.backgrounds{
+    background-color: rgb(166, 166, 166);
+    border-radius: 5px 5px;
+}
+#hrFifthpart{
+    position: relative;
+    top: 10%;
+    height: 3px;
+}
+@media only screen and (max-width: 700px) {
+    .flexFifthItem >p{
+        font-size: 18px;
+    }
+    #hrFifthpart{
+       display: none;
+    }
+    .fifthContainer{
+        height: 500px;
+    }
+}

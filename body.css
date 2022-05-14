@@ -1,0 +1,283 @@
+.animation {
+  top: 100px;
+  position: absolute ;
+  margin-left: 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.circles {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.823);
+}
+.circlesInner {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 10px;
+  margin-top: 10px;
+}
+.item {
+  width: 100%;
+  height: 772px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+  .item {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+  }
+}
+#afaa {
+  font-size: 14px;
+  position: absolute;
+  bottom: 200px;
+  z-index: 505;
+  color: aliceblue;
+}
+#wrapperOwl {
+  position: relative;
+}
+#findYourMatch {
+  position: absolute;
+  bottom: 50%;
+  color: white;
+  z-index: 500;
+  left: 10%;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.755);
+}
+#owlDown {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.755);
+  height: 20%;
+  bottom: 18px;
+  z-index: 500;
+  width: 100%;
+}
+#owlDown > p {
+  position: relative;
+  text-align: center;
+  color: aliceblue;
+  top: 20%;
+  font-size: 40px;
+  font-family: 'Brush Script MT', cursive;
+}
+@media only screen and (max-width: 1300px) {
+  .circles {
+    display: none;
+  }
+  .circlesInner {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #findYourMatch {
+    font-size: 20px;
+  }
+  #owlDown > p {
+    top: 20%;
+    font-size: 20px;
+  }
+}
+.search {
+  height: 330px;
+  width: 100%;
+  background-color: #474747;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #a00d0d;
+}
+.choice {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 35px;
+  margin-left: 10%;
+}
+#search {
+  border-bottom: 5px solid #ba3b3b;
+  border-radius: 5px 5px;
+}
+#search:hover {
+  border-bottom: 5px solid #ba3b3b;
+  border-radius: 5px 5px;
+}
+#sell:hover {
+  border-bottom: 5px solid #ba3b3b;
+  border-radius: 5px 5px ;
+}
+.formChoice {
+  position: absolute;
+  bottom: 0;
+  height: 67%;
+  background-color: #797979;
+  width: 100%;
+  border-top: 1px solid black;
+  display: block;
+}
+.wrapSelector {
+  display: inline-block;
+  font-size: 15px;
+  width: 130px;
+}
+.wrapSelector > select {
+  width: 100px;
+  height: 40px;
+}
+.wrapSelector > p {
+  text-align: center;
+  color: #c40a1d;
+  font-size: 20px;
+}
+.styleform1 {
+  position: absolute;
+  top: 20%;
+  border: 1px solid black;
+  border-radius: 10px 10px;
+  margin: 10px;
+  background-color: #474747;
+}
+#searchSubmit {
+  width: 100px;
+  height: 30px;
+  background-color: #c40a1d;
+  border-radius: 10px 10px;
+}
+#searchSubmit:hover {
+  background-color: #f61b30;
+}
+.optionClass {
+  background-color: #557b7b;
+}
+.wrapSelector > select {
+  background-color: #92a3a3;
+  font-size: 20px;
+  border-radius: 10px 10px;
+}
+@media only screen and (max-width: 700px) {
+  .styleform1 {
+    top: 0;
+    display: inline-block;
+    width: 300px;
+  }
+  .searchOrFind {
+    position: relative;
+    height: 100px;
+    width: 60%;
+  }
+  .choice {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 25px;
+    margin-left: 10%;
+    color: #c40a1d;
+  }
+}
+.sellWrapper {
+  position: absolute;
+  bottom: 0;
+  height: 67%;
+  background-color: #797979;
+  width: 100%;
+  border-top: 1px solid black;
+  display: none;
+}
+#image-file {
+  width: 100px;
+  height: 30px;
+  background-color: #c40a1d;
+  border-radius: 10px 10px;
+}
+#upLoad {
+  width: 100px;
+  height: 30px;
+  background-color: #c40a1d;
+  border-radius: 10px 10px;
+}
+.sendMesg {
+  height: 300px;
+  width: 40%;
+  background-color: #474747;
+}
+.searchOrFind {
+  position: relative;
+  height: 300px;
+  width: 70%;
+  background-color: #474747;
+  border-right: 1px solid red;
+}
+.formMsg {
+  display: flex;
+  flex-direction: column;
+}
+.formMsg > p {
+  text-align: center;
+  font-size: 30px;
+}
+#sendMsgText {
+  height: 120px;
+  margin: 10px;
+  border-radius: 5px 5px;
+}
+#submitSendmsg {
+  background-color: #c40a1d;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px 5px;
+}
+#submitSendmsg:hover {
+  background-color: #ed283c;
+}
+#msgStatus {
+  text-align: center;
+  font-size: 25px;
+  color: #c40a1d;
+}
+@media only screen and (max-width: 700px) {
+  .formMsg > p {
+    text-align: center;
+    font-size: 20px;
+  }
+  #msgStatus {
+    text-align: center;
+    font-size: 20px;
+  }
+  .search {
+    height: 820px;
+    width: 100%;
+    background-color: #c9c9c9;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #a00d0d;
+  }
+  .sendMesg {
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+  }
+  #sendMsgText {
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 281px) {
+  .styleform1 {
+    min-width: 270px;
+  }
+  .styleform1 {
+    top: 0;
+    display: inline-block;
+    width: 270px;
+  }
+}
